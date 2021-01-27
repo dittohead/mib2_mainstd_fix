@@ -21,7 +21,7 @@ def metainfo2_changer(new_filename, reached_version, filename='metainfo2.txt',):
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        print("Usage: metainfo_updater.py <outputfilename> <reached HW>")
+        print("Usage: python metainfo_updater.py <outputfilename> <reached HW>")
         exit()
 
     filename = sys.argv[1]
