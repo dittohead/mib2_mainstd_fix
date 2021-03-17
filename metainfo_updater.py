@@ -14,7 +14,7 @@ def metainfo2_changer(new_filename, reached_version, filename='metainfo2.txt',):
                     _founded = _str.group(0)
                     _rv = rf'\\{reached_version}\\'
                     _new_version = re.sub(r'\\\d{2}\\', _rv, _founded)
-                    new_block = f'\n\r{_founded}\nLink = "{_new_version}"'
+                    new_block = f'\n\r{_new_version}\nLink = "{_founded}"'
                     updated_file.write(new_block)
                     counter+=1
             print("Blocks updated:", counter)
